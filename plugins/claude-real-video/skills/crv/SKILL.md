@@ -1,9 +1,9 @@
 ---
-name: claude-real-video
+name: crv
 description: "A video (file, chat attachment or URL) needs to be read, summarised or analysed: crv turns it into deduplicated keyframes, a timestamped Whisper transcript and a MANIFEST timeline."
 ---
 
-# claude-real-video (crv)
+# crv (claude-real-video)
 
 The model cannot watch video; it reads text and images. `crv` runs locally and splits a video into deduplicated keyframes, a Whisper transcript and a `MANIFEST.txt` timeline that places each frame inside the speech it belongs to. It calls no LLM and uploads nothing. It reads a local file or a URL (YouTube, Instagram and others) and never changes the source.
 

@@ -92,7 +92,7 @@ Then just paste a video link into your agent and ask about it.
 
 ```bash
 git clone https://github.com/HUANGCHIHHUNGLeo/claude-real-video.git
-mkdir -p ~/.claude/skills && cp -r claude-real-video/skills/claude-real-video ~/.claude/skills/
+mkdir -p ~/.claude/skills && cp -r claude-real-video/skills/crv ~/.claude/skills/
 ```
 
 </details>
