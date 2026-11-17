@@ -10,11 +10,11 @@ description: "A video (file, chat attachment or URL) needs to be read: crv turns
 ## Install
 
 ```bash
-uv tool install --force "claude-real-video[fast] @ git+https://github.com/hannnnn-l/claude-real-video" --with "av==18.1.0"
+uv tool install --force "claude-real-video[fast] @ git+https://github.com/hannnnn-l/claude-real-video"
 ```
 
 - Needs Python 3.10+ and ffmpeg/ffprobe on PATH.
-- `av` is pinned to 18.1.0: PyAV 19 breaks faster-whisper 1.2.1 audio decoding, which shows as `(none — transcription failed)` with `metadata_errors`.
+- The `fast` extra pins `av<19`: PyAV 19 breaks faster-whisper 1.2.1 audio decoding, which shows as `(none — transcription failed)` with `metadata_errors`.
 - `crv --help | grep -- --prompt-file` prints a line on a build from this repository.
 - The first transcription downloads the Whisper model.
 
